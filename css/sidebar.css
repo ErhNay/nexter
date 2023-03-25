@@ -3,4 +3,33 @@
 
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
+
+  display: flex;
+  justify-content: center;
+}
+
+.nav-btn {
+  border: none;
+  border-radius: none;
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+  margin-top: 4rem;
+}
+
+.nav-btn::after,
+.nav-btn::before {
+  content: '';
+  height: inherit;
+  width: inherit;
+  background-color: #fff;
+  display: block;
+}
+
+.nav-btn::before {
+  transform: translateY(-1.5rem);
+}
+
+.nav-btn::after {
+  transform: translateY(1.3rem);
 }
